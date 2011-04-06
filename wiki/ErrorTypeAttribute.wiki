@@ -1,3 +1,4 @@
+#labels JBO-25058,ADF
 Definition Type Attribute exception on query
 
 = Introduction =
@@ -33,5 +34,13 @@ To see the bug, please follow the steps below in the project:
 
 at step 7 you will find an popup exception as below (the exception popup whenever you visit the search page! until redeploy the application.): 
 
+{{{
+Messages for this page are listed below.
+	
+Definition __vcrow_indexed_attribute__FkGrade_0 of type Attribute is not found in ApplicationModule_PostingVO1_PostingQuickSearch_12237.
+	
+Definition __vcrow_indexed_attribute__FkAppointment_0 of type Attribute is not found in ApplicationModule_PostingVO1_PostingQuickSearch_12237.
+}}}
+
 = Resources =
-[http://adf-samples-demos.googlecode.com/files/ErrorTypeAttribute.rar]
+[http://adf-samples-demos.googlecode.com/files/ErrorTypeAttribute.rar ErrorTypeAttribute.rar]
