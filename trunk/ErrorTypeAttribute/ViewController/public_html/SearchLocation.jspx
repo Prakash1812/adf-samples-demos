@@ -14,8 +14,6 @@
                                  xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
                                  id="pgl1">
               <af:commandLink text="to blank" id="cl1" action="toBlank"/>
-              <af:commandToolbarButton text="to blank" id="ctb1"
-                                       action="toBlank"/>
             </af:panelGroupLayout>
           </f:facet>
           <f:facet name="center">
