@@ -42,5 +42,7 @@ Definition __vcrow_indexed_attribute__FkGrade_0 of type Attribute is not found i
 Definition __vcrow_indexed_attribute__FkAppointment_0 of type Attribute is not found in ApplicationModule_PostingVO1_PostingQuickSearch_12237.
 }}}
 
+http://code.google.com/p/adf-samples-demos/issues/detail?id=2
+
 = Resources =
 [http://adf-samples-demos.googlecode.com/files/ErrorTypeAttribute.rar ErrorTypeAttribute.rar]
