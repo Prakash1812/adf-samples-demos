@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.55.36" id="SearchLocationPageDef"
+                Package="erta.view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="LocationsView1" RangeSize="25"
+              DataControl="AppModuleDataControl" id="LocationsView1Iterator"/>
+    <searchRegion Criteria="LocationsViewCriteria"
+                  Customizer="oracle.jbo.uicli.binding.JUSearchBindingCustomizer"
+                  Binds="LocationsView1Iterator"
+                  id="LocationsViewCriteriaQuery"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="LocationsView1Iterator" id="LocationsView1">
+      <nodeDefinition DefName="erta.model.LocationsView" Name="LocationsView10">
+        <AttrNames>
+          <Item Value="LocationId"/>
+          <Item Value="StreetAddress"/>
+          <Item Value="PostalCode"/>
+          <Item Value="City"/>
+          <Item Value="StateProvince"/>
+          <Item Value="CountryId"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+  </bindings>
+</pageDefinition>
