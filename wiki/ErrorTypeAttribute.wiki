@@ -46,4 +46,4 @@ Definition __vcrow_indexed_attribute__FkAppointment_0 of type Attribute is not f
 = Resources =
 [http://code.google.com/p/adf-samples-demos/issues/detail?id=2 Demo Output]
 
-[http://adf-samples-demos.googlecode.com/files/ErrorTypeAttribute.rar ErrorTypeAttribute.rar]
+[http://adf-samples-demos.googlecode.com/files/ErrorTypeAttribute.rar Demo Source]
