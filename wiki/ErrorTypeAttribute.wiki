@@ -34,4 +34,4 @@ To see the bug, please follow the steps below in the project:
 at step 7 you will find an popup exception as below (the exception popup whenever you visit the search page! until redeploy the application.): 
 
 = Resources =
-*ErrorTypeAttribute.rar* [http://adf-samples-demos.googlecode.com/files/ErrorTypeAttribute.rar]
+[http://adf-samples-demos.googlecode.com/files/ErrorTypeAttribute.rar]
