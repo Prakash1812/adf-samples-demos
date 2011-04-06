@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-call id="taskFlowLocation">
+    <task-flow-reference>
+      <document>/WEB-INF/taskFlowLocation.xml</document>
+      <id>taskFlowLocation</id>
+    </task-flow-reference>
+  </task-flow-call>
+</adfc-config>

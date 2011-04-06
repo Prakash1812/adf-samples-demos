@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application"
+             version="11.1.1.55.36" id="DataBindings" SeparateXMLFiles="false"
+             Package="erta.view" ClientType="Generic">
+  <pageMap>
+    <page path="/SearchLocation.jspx"
+          usageId="erta_view_SearchLocationPageDef"/>
+    <page path="/Blank.jspx" usageId="erta_view_BlankPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="erta_view_SearchLocationPageDef"
+          path="erta.view.pageDefs.SearchLocationPageDef"/>
+    <page id="erta_view_BlankPageDef" path="erta.view.pageDefs.BlankPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="AppModuleDataControl" Package="erta.model"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl"
+                     SupportsTransactions="true" SupportsFindMode="true"
+                     SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true"
+                     Configuration="AppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>

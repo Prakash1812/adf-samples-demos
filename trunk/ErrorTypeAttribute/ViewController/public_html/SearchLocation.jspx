@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <f:view>
+    <af:document id="d1">
+      <af:messages id="m1"/>
+      <af:form id="f1">
+        <af:panelStretchLayout id="psl1" topHeight="auto">
+          <f:facet name="bottom">
+            <af:panelGroupLayout layout="horizontal"
+                                 xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+                                 id="pgl1">
+              <af:commandLink text="to blank" id="cl1" action="toBlank"/>
+              <af:commandToolbarButton text="to blank" id="ctb1"
+                                       action="toBlank"/>
+            </af:panelGroupLayout>
+          </f:facet>
+          <f:facet name="center">
+            <af:table value="#{bindings.LocationsView1.collectionModel}"
+                      var="row" rows="#{bindings.LocationsView1.rangeSize}"
+                      emptyText="#{bindings.LocationsView1.viewable ? 'No data to display.' : 'Access Denied.'}"
+                      fetchSize="#{bindings.LocationsView1.rangeSize}"
+                      rowBandingInterval="0"
+                      selectedRowKeys="#{bindings.LocationsView1.collectionModel.selectedRow}"
+                      selectionListener="#{bindings.LocationsView1.collectionModel.makeCurrent}"
+                      rowSelection="single" id="resId1">
+              <af:column sortProperty="LocationId" sortable="true"
+                         headerText="#{bindings.LocationsView1.hints.LocationId.label}"
+                         id="resId1c1">
+                <af:outputText value="#{row.LocationId}" id="ot3">
+                  <af:convertNumber groupingUsed="false"
+                                    pattern="#{bindings.LocationsView1.hints.LocationId.format}"/>
+                </af:outputText>
+              </af:column>
+              <af:column sortProperty="StreetAddress" sortable="true"
+                         headerText="#{bindings.LocationsView1.hints.StreetAddress.label}"
+                         id="resId1c2">
+                <af:outputText value="#{row.StreetAddress}" id="ot2"/>
+              </af:column>
+              <af:column sortProperty="PostalCode" sortable="true"
+                         headerText="#{bindings.LocationsView1.hints.PostalCode.label}"
+                         id="resId1c3">
+                <af:outputText value="#{row.PostalCode}" id="ot4"/>
+              </af:column>
+              <af:column sortProperty="City" sortable="true"
+                         headerText="#{bindings.LocationsView1.hints.City.label}"
+                         id="resId1c4">
+                <af:outputText value="#{row.City}" id="ot1"/>
+              </af:column>
+              <af:column sortProperty="StateProvince" sortable="true"
+                         headerText="#{bindings.LocationsView1.hints.StateProvince.label}"
+                         id="resId1c5">
+                <af:outputText value="#{row.StateProvince}" id="ot5"/>
+              </af:column>
+              <af:column sortProperty="CountryId" sortable="true"
+                         headerText="#{bindings.LocationsView1.hints.CountryId.label}"
+                         id="resId1c6">
+                <af:outputText value="#{row.CountryId}" id="ot6"/>
+              </af:column>
+            </af:table>
+          </f:facet>
+          <f:facet name="top">
+            <af:query id="qryId1" headerText="Search" disclosed="true"
+                      value="#{bindings.LocationsViewCriteriaQuery.queryDescriptor}"
+                      model="#{bindings.LocationsViewCriteriaQuery.queryModel}"
+                      queryListener="#{bindings.LocationsViewCriteriaQuery.processQuery}"
+                      queryOperationListener="#{bindings.LocationsViewCriteriaQuery.processQueryOperation}"
+                      resultComponentId="::resId1" saveQueryMode="readOnly"
+                      modeChangeVisible="false"/>
+          </f:facet>
+        </af:panelStretchLayout>
+      </af:form>
+    </af:document>
+  </f:view>
+</jsp:root>
