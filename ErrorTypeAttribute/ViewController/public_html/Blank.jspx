@@ -13,8 +13,6 @@
                                  xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
                                  id="pgl1">
               <af:commandLink text="to search" id="cl1" action="toSearch"/>
-              <af:commandToolbarButton text="to search" id="ctb1"
-                                       action="toSearch"/>
             </af:panelGroupLayout>
           </f:facet>
           <f:facet name="center"/>
