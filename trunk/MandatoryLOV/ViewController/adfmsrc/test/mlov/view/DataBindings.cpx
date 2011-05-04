@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application"
+             version="11.1.1.55.36" id="DataBindings" SeparateXMLFiles="false"
+             Package="test.mlov.view" ClientType="Generic">
+  <pageMap>
+    <page path="PageFlow#CreateInsert"
+          usageId="test_mlov_view_adfc_config___CreateInsertPageDef"/>
+    <page path="/details.jspx" usageId="test_mlov_view_detailsPageDef"/>
+    <page path="PageFlow#Rollback"
+          usageId="test_mlov_view_adfc_config___RollbackPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="test_mlov_view_adfc_config___CreateInsertPageDef"
+          path="test.mlov.view.pageDefs.adfc_config___CreateInsertPageDef"/>
+    <page id="test_mlov_view_detailsPageDef"
+          path="test.mlov.view.pageDefs.detailsPageDef"/>
+    <page id="test_mlov_view_adfc_config___RollbackPageDef"
+          path="test.mlov.view.pageDefs.adfc_config___RollbackPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="AppModuleDataControl" Package="test.mlov.model"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl"
+                     SupportsTransactions="true" SupportsFindMode="true"
+                     SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true"
+                     Configuration="AppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>
