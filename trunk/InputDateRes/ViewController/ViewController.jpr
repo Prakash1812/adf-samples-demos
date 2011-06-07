@@ -54,25 +54,25 @@
       <string v="oracle.mds.internal.dt.ide.MDSLibraryCustCSProvider/mdsContentSet"/>
       <string v="oracle.adfdtinternal.model.ide.settings.ADFMSettings/adfmContentSet"/>
    </list>
-   <value n="defaultPackage" v="test.mlov.view"/>
+   <value n="defaultPackage" v="test.idr.view"/>
    <hash n="oracle.ide.model.DependencyConfiguration">
       <list n="dependencyList">
          <hash>
             <value n="class" v="oracle.jdeveloper.library.ProjectLibrary"/>
-            <url n="sourceOwnerURL" path="../MandatoryLOV.jws"/>
+            <url n="sourceOwnerURL" path="../InputDateRes.jws"/>
             <url n="sourceURL" path="../Model/Model.jpr"/>
          </hash>
       </list>
    </hash>
    <hash n="oracle.ide.model.TechnologyScopeConfiguration">
       <list n="technologyScope">
-         <string v="JSP"/>
-         <string v="ADFc"/>
-         <string v="ADF_FACES"/>
          <string v="XML"/>
-         <string v="HTML"/>
-         <string v="JSF"/>
          <string v="Java"/>
+         <string v="ADFc"/>
+         <string v="HTML"/>
+         <string v="ADF_FACES"/>
+         <string v="JSF"/>
+         <string v="JSP"/>
       </list>
    </hash>
    <hash n="oracle.jdeveloper.compiler.OjcConfiguration">
@@ -91,7 +91,7 @@
    </hash>
    <hash n="oracle.jdeveloper.deploy.dt.DeploymentProfiles">
       <hash n="profileDefinitions">
-         <hash n="MandatoryLOV_ViewController_webapp1">
+         <hash n="InputDateRes_ViewController_webapp1">
             <hash n="appletArchives"/>
             <hash n="appletFiles">
                <value n="autoInclude" v="true"/>
@@ -102,8 +102,8 @@
             <hash n="archiveOptions">
                <value n="hasManifest" v="false"/>
             </hash>
-            <url n="earURL" path="deploy/MandatoryLOV_ViewController_webapp1.ear"/>
-            <value n="enterpriseAppName" v="MandatoryLOV_ViewController_webapp1"/>
+            <url n="earURL" path="deploy/InputDateRes_ViewController_webapp1.ear"/>
+            <value n="enterpriseAppName" v="InputDateRes_ViewController_webapp1"/>
             <hash n="fileGroups">
                <list n="groups">
                   <hash>
@@ -151,21 +151,21 @@
                   </hash>
                </list>
             </hash>
-            <url n="jarURL" path="deploy/MandatoryLOV_ViewController_webapp1.war"/>
+            <url n="jarURL" path="deploy/InputDateRes_ViewController_webapp1.war"/>
             <hash n="libraryDependencies">
                <value n="IncludeLibrariesFromOtherContainers" v="true"/>
             </hash>
             <value n="profileClass" v="oracle.jdeveloper.deploy.war.WarProfile"/>
-            <value n="profileName" v="MandatoryLOV_ViewController_webapp1"/>
+            <value n="profileName" v="InputDateRes_ViewController_webapp1"/>
          </hash>
       </hash>
       <list n="profileList">
-         <string v="MandatoryLOV_ViewController_webapp1"/>
+         <string v="InputDateRes_ViewController_webapp1"/>
       </list>
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
-      <value n="j2eeWebAppName" v="MandatoryLOV"/>
-      <value n="j2eeWebContextRoot" v="MandatoryLOV"/>
+      <value n="j2eeWebAppName" v="InputDateRes-ViewController-webapp"/>
+      <value n="j2eeWebContextRoot" v="InputDateRes-ViewController-context-root"/>
    </hash>
    <hash n="oracle.jdeveloper.runner.RunConfigurations">
       <hash n="runConfigurationDefinitions">
@@ -181,10 +181,6 @@
    <hash n="oracle.jdevimpl.config.JProjectLibraries">
       <list n="exportedReferences">
          <hash>
-            <value n="id" v="JSP Runtime"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
             <value n="id" v="ADF Page Flow Runtime"/>
             <value n="isJDK" v="false"/>
          </hash>
@@ -245,56 +241,16 @@
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
-            <value n="id" v="JPS Designtime"/>
+            <value n="id" v="JSP Runtime"/>
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
             <value n="id" v="Oracle JEWT"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="ADF Faces Databinding Runtime"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="Oracle XML Parser v2"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="JDeveloper Runtime"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="SQLJ Runtime"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="ADF Model Runtime"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="BC4J Runtime"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="Oracle JDBC"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="Connection Manager"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="BC4J Oracle Domains"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>
       <list n="libraryReferences">
          <hash>
-            <value n="id" v="JSP Runtime"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
             <value n="id" v="ADF Page Flow Runtime"/>
             <value n="isJDK" v="false"/>
          </hash>
@@ -355,47 +311,11 @@
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
-            <value n="id" v="JPS Designtime"/>
+            <value n="id" v="JSP Runtime"/>
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
             <value n="id" v="Oracle JEWT"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="ADF Faces Databinding Runtime"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="Oracle XML Parser v2"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="JDeveloper Runtime"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="SQLJ Runtime"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="ADF Model Runtime"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="BC4J Runtime"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="Oracle JDBC"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="Connection Manager"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="BC4J Oracle Domains"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>

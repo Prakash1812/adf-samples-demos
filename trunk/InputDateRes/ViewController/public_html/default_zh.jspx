@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <f:view locale="zh">
+    <af:document id="d1">
+      <af:form id="f1">
+        <af:inputDate label="Label 1" id="id1"/>
+        How to change the 星期日, 星期一, 星期二, 星期三, 星期四, 星期五, 星期六 from the popup above
+        <br />to 日, 一, 二, 三, 四, 五, 六 ?
+      </af:form>
+      <af:panelFormLayout id="pfl1">
+        <f:facet name="footer"/>
+      </af:panelFormLayout>
+    </af:document>
+  </f:view>
+</jsp:root>
