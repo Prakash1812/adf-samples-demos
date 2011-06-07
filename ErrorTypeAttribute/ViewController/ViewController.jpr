@@ -172,6 +172,11 @@
          <hash n="Default">
             <value n="custom" v="false"/>
             <value n="name" v="Default"/>
+            <hash n="oracle.adfdt.controller.adfc.source.runner.AdfcRunnerLaunchSettings">
+               <value n="taskFlowId" v="taskFlowLocation"/>
+               <value n="unboundedTaskFlow" v="false"/>
+            </hash>
+            <url n="targetURL" path="public_html/WEB-INF/taskFlowLocation.xml"/>
          </hash>
       </hash>
       <list n="runConfigurationList">

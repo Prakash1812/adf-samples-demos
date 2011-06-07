@@ -1,0 +1,8 @@
+.AFDefaultFontFamily:alias {
+  font-family: Arial, PMingLiU, Tahoma, Verdana, Helvetica, sans-serif;
+}
+
+.AFDefaultFont:alias {
+  font-size: 24px; 
+  color: Red;
+}
